@@ -1,0 +1,83 @@
+@use "./partials/colors";
+
+@mixin section-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+
+
+
+body {
+    width: 400px;
+    margin: auto;
+    background-color: colors.$main-red;
+}
+
+header {
+    background-color: colors.$white;
+    padding-left: 5px;
+}
+
+.logo {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.local {
+    display: block;
+    background-color: colors.$main-red;
+    @include section-padding;
+
+    h1 {
+        color: colors.$dark-grey;
+    }
+
+    p {
+        color: colors.$yellow;
+    }
+}
+
+.bikes {
+    background-color: colors.$light-grey;
+    text-align: center;
+}
+
+.signup {
+    display: block;
+    background-color: colors.$cyan;
+    color: colors.$dark-blue;
+    @include section-padding;
+
+
+    h1 {
+        color: colors.$grey;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.about {
+    display: block;
+    background-color: colors.$yellow;
+    @include section-padding;
+
+
+    h1 {
+        color: colors.$main-red;
+    }
+
+    p {
+        color: colors.$light-grey;
+    }
+}
